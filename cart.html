@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>cart-RedStore| Ecommarce website design</title>
+  <!-- font-link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!-- ___icon link____ -->
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+</head>
+<!-- ____header-section-start____ -->
+<header class="row">
+  <div class="containner">
+    <nav>
+      <div class="logo">
+        <a href="index.html"><img src="images/logo.png" width="125px"></a>
+      </div>
+      <ul id="menuList">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="account.html"> Account</a></li>
+      </ul>
+      <div class="menu-icon">
+        <a href="cart.html"><i class='bx bx-cart'></i></a>
+        <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- ____header-section-End____ -->
+
+<!-- __________cart
+ items details ______ -->
+
+ <main>
+  <section class="small-container cart-page">
+    <table>
+      <tr>
+        <th>Product</th>
+        <th>Quantiy</th>
+        <th>Subtotal</th>
+      </tr>
+      <tr>
+        <td>
+          <div class="cart-info">
+            <img src="images/buy-1.jpg" alt="">
+            <div>
+              <p>Red Printed T-shirt</p>
+              <small>Price: $50.00</small> <br>
+              <a href="">Remove</a>
+            </div>
+          </div>
+        </td>
+        <!-- <td>Product Name</td> -->
+        <td> <input type="number" value="1"> </td>
+        <td>$50</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="cart-info">
+            <img src="images/buy-2.jpg" alt="">
+            <div>
+              <p>Red Printed T-shirt</p>
+              <small>Price: $75.00</small> <br>
+              <a href="">Remove</a>
+            </div>
+          </div>
+        </td>
+        <!-- <td>Product Name</td> -->
+        <td> <input type="number" value="1"> </td>
+        <td>$75</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="cart-info">
+            <img src="images/buy-3.jpg" alt="">
+            <div>
+              <p>Red Printed T-shirt</p>
+              <small>Price: $75.00</small> <br>
+              <a href="">Remove</a>
+            </div>
+          </div>
+        </td>
+        <!-- <td>Product Name</td> -->
+        <td> <input type="number" value="1"> </td>
+        <td>$75</td>
+      </tr>
+    </table>
+<div class="total-price">
+<table>
+  <tr>
+    <td>Subtotal</td>
+    <td>$200.0</td>
+  </tr>
+
+  <tr>
+    <td>Tax</td>
+    <td>$30.0</td>
+  </tr>
+  <tr>
+    <td>Total</td>
+    <td>$230.0</td>
+  </tr>
+
+</table>
+</div>
+  </section>
+ </main>
+
+
+<!-- footer section  -->
+<footer class="footer">
+  <div class="containner">
+    <div class="row-s">
+      <div class="foooter-col-1">
+        <h3>Download Our App </h3>
+        <p>Download App for Android and ios mobile Phone.</p>
+        <div class="app-logo">
+          <img src="images/play-store.png" alt="">
+          <img src="images/app-store.png" alt="">
+
+        </div>
+      </div>
+      <div class="foooter-col-2">
+        <img src="images/logo-white.png" alt="">
+        <p>Our Purpose Is To Sustainably Make the pleasure <br> and Benefits of Sports Accessible to the Many.</p>
+      </div>
+      <div class="foooter-col-3">
+        <h3>Usefull Link </h3>
+        <ul>
+          <li>Coupons</li>
+          <li>Blog Post</li>
+          <li>Return Policy</li>
+          <li>Join Affiliate</li>
+        </ul>
+      </div>
+      <div class="foooter-col-4">
+        <h3>Facebook </h3>
+        <ul>
+          <li>Twitter</li>
+          <li>Instagram</li>
+          <li>Linkdine</li>
+          <li>YouTube</li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <p class="copy-right">Copyright 2024-Programming-Ibrahim </p>
+  </div>
+</footer>
+
+<script>
+  let menuList = document.getElementById("menuList")
+  menuList.style.maxHeight = "0px";
+
+  function toggleMenu() {
+    if (menuList.style.maxHeight == "0px") {
+      menuList.style.maxHeight = "300px";
+    }
+    else {
+      menuList.style.maxHeight = "0px";
+    }
+  }
+
+</script>
+<script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script
+
+</body>
+
+</html>
